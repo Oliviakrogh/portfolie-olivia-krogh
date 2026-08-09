@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Manrope:wght@400;600&display=swap');
+@font-face {
+    font-family: "Aurellio";
+    src: url("../fonts/Aurellio.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+    --background-color: #DCCBBC;
+    --secondary-color: #F2EBE6;
+    --dark-color: #291811;
+    --hover-color: #462C21;
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--dark-color);
+    margin: 0;
+}
+
+button {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+
+/* HERO */
+
+.hero {
+    height: 550px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* LOGO */
+
+.hero-logo {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    width: 45px;
+    height: auto;
+    z-index: 2;
+}
+
+
+/* BILLEDET AF DIG */
+
+.hero-image {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: bottom center;
+}
+
+
+/* TEKSTEN I HØJRE SIDE */
+
+.hero-content {
+    width: 55%;
+    align-self: center;
+    text-align: center;
+    padding: 40px 70px 20px 30px;
+}
+
+
+/* NAVN */
+
+.hero-content h1 {
+    font-family: "Aurellio", cursive;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 1;
+    margin: 0 0 12px;
+}
+
+
+/* MULTIMEDIEDESIGNER */
+
+.hero-content h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 1;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0 0 32px;
+}
+
+
+/* BESKRIVELSE */
+
+.hero-content p {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 480px;
+    margin: 0 auto 28px;
+}
+
+
+/* KNAP */
+
+.hero-content button {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 14px 22px;
+    border: none;
+    cursor: pointer;
+}
+
+/* NAVIGATION */
+
+.hero-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 10;
+}
+
+.hero-nav {
+    display: flex;
+    gap: 75px;
+}
+
+.hero-nav a {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+.hero-nav a:hover {
+    opacity: 0.6;
+}
+
+
+/* BURGER MENU */
+
+.menu-button {
+    position: absolute;
+    right: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    background: none;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-button span {
+    width: 18px;
+    height: 1px;
+    background-color: var(--dark-color);
+    display: block;
+}
+
+.desk {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1536 / 521;
+
+    background-image: url("../img/om-mig-billede.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+ /* INTERAKTIVE ELEMENTER */
+
+.desk-item {
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.desk-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+.airpods-item {
+    width: 93px;
+    top: 51%;
+    left: 67.5%;
+}
+
+.kamera-item {
+    width: 235px;
+    top: 12%;
+    left: 10%;
+}
+
+.notesbog-item {
+    width: 218px;
+    top: 48%;
+    left: 8%;
+}
+
+.bog-item {
+    width: 250px;
+    top: -7%;
+    left: -1.5%;
+}
+
+.fritid-item {
+    width: 477px;
+    top: 7%;
+    right: 1.2%;
+}
+
+
+/* HOVER PÅ BILLEDET */
+
+.desk-item:hover img {
+    transform: scale(1.08);
+}
+
+
+/* TEKST VED HOVER */
+
+.desk-label {
+    position: absolute;
+    top: -50px;
+    left: -55px;
+
+    font-family: "Aurellio", cursive;
+    font-size: 34px;
+    color: var(--secondary-color);
+    white-space: nowrap;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.desk-item:hover .desk-label {
+    opacity: 1;
+}
+
+
+/* PIL */
+
+.desk-arrow {
+    width: 5px;
+    height: auto;
+    display: block;
+    margin-top: 5px;
+}

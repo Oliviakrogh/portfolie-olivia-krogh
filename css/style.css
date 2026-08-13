@@ -223,31 +223,31 @@ button:hover {
 
 
 .computer-item {
-    width: 491px;
+    width: 32.3%;
     bottom: 0%;
     left: 34.7%;
 }
 
 .airpods-item {
-    width: 93px;
-    top: 11.5%;
+    width: 6%;
+    top: 11.8%;
     left: 71.3%;
 }
 
 .notesbog-item {
-    width: 219px;
+    width: 15%;
     top: 38%;
     left: 16.8%;
 }
 
 .bog-item {
-    width: 255px;
+    width: 17%;
     top: 36.4%;
     right: 10%;
 }
 
 .fritid-item {
-    width: 260px;
+    width: 17.5%;
     top: 16%;
     left: 10.5%;
 }

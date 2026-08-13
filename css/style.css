@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Manrope:wght@400;600&display=swap');
 @font-face {
     font-family: "Aurellio";
-    src: url("../fonts/Aurellio.ttf") format("truetype");
+    src: url("../fonts/Aurellio.woff2") format("woff2"), url("../fonts/Aurellio.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }

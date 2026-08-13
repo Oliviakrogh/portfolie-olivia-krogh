@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Manrope:wght@400;600&display=swap');
 @font-face {
     font-family: "Aurellio";
@@ -32,7 +31,9 @@ button:hover {
 }
 
 
-/* HERO */
+/* ========================================
+   HERO
+======================================== */
 
 .hero {
     height: 550px;
@@ -60,7 +61,7 @@ button:hover {
 }
 
 
-/* BILLEDET AF DIG */
+/* BILLEDET AF MIG */
 
 .hero-image {
     width: 45%;
@@ -72,7 +73,7 @@ button:hover {
 
 .hero-image img {
     width: auto;
-    height: 100%;
+    height: 90%;
     max-width: 100%;
     display: block;
     object-fit: contain;
@@ -128,13 +129,24 @@ button:hover {
 
 /* KNAP */
 
-.hero-content button {
+.hero-button {
+    display: inline-block;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     font-size: 14px;
     padding: 14px 22px;
-    border: none;
+
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+
+    text-decoration: none;
     cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: var(--hover-color);
 }
 
 /* NAVIGATION */
@@ -170,29 +182,13 @@ button:hover {
     opacity: 0.6;
 }
 
-
-/* BURGER MENU */
-
-.menu-button {
-    position: absolute;
-    right: 30px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-
-    background: none;
-    padding: 5px;
-    border: none;
-    cursor: pointer;
-}
-
-.menu-button span {
-    width: 18px;
+.section-line {
+    width: 60px;
     height: 1px;
+    margin: 18px auto;
     background-color: var(--dark-color);
-    display: block;
 }
+
 
 .desk {
     position: relative;
@@ -210,6 +206,8 @@ button:hover {
 
  /* INTERAKTIVE ELEMENTER */
 
+
+
 .desk-item {
     position: absolute;
     display: block;
@@ -224,40 +222,40 @@ button:hover {
 }
 
 
-.airpods-item {
-    width: 93px;
-    top: 51%;
-    left: 67.5%;
+.computer-item {
+    width: 491px;
+    bottom: 0%;
+    left: 34.7%;
 }
 
-.kamera-item {
-    width: 235px;
-    top: 12%;
-    left: 10%;
+.airpods-item {
+    width: 93px;
+    top: 11.5%;
+    left: 71.3%;
 }
 
 .notesbog-item {
-    width: 218px;
-    top: 48%;
-    left: 8%;
+    width: 219px;
+    top: 38%;
+    left: 16.8%;
 }
 
 .bog-item {
-    width: 250px;
-    top: -7%;
-    left: -1.5%;
+    width: 255px;
+    top: 36.4%;
+    right: 10%;
 }
 
 .fritid-item {
-    width: 477px;
-    top: 7%;
-    right: 1.2%;
+    width: 260px;
+    top: 16%;
+    left: 10.5%;
 }
 
 
 /* HOVER PÅ BILLEDET */
 
-.desk-item:hover img {
+.desk-item:hover > img {
     transform: scale(1.08);
 }
 
@@ -283,12 +281,1349 @@ button:hover {
     opacity: 1;
 }
 
+.computer-item .desk-label {
+    top: 220px;
+    left: 510px;
+}
 
-/* PIL */
+.airpods-item .desk-label {
+    top: -45px;
+    left: 100px;
+}
 
-.desk-arrow {
-    width: 5px;
+.notesbog-item .desk-label {
+    top: 240px;
+    left: -170px;
+}
+
+.bog-item .desk-label {
+    top: 220px;
+    left: 250px;
+}
+
+.fritid-item .desk-label {
+    top: -30px;
+    left: -35px;
+}
+
+
+
+/* PIL VED COMPUTER */
+.computer-item .desk-arrow {
+    width: 35px !important;
+    transform: translate(0px, 0px) scaleX(-1) !important;
+}
+
+/* PIL VED AIRPODS */
+.airpods-item .desk-arrow {
+    width: 35px !important;
+    transform: translate(10px, 0px) scaleX(-1) !important;
+}
+
+/* PIL VED NOTESBOG */
+.notesbog-item .desk-arrow {
+    width: 35px !important;
+    transform: translate(150px, -30px) rotate(-50deg) !important;
+}
+
+/* PIL VED BOG */
+.bog-item .desk-arrow {
+    width: 35px !important;
+    transform: translate(10px, -100px) scaleX(-1) scaleY(-1) !important;
+}
+
+/* PIL VED FRITID */
+.fritid-item .desk-arrow {
+    width: 35px !important;
+    transform: translate(-20px, 2px) rotate(25deg)  !important;
+}
+
+
+
+
+/* ========================================
+   OM MIG
+======================================== */
+
+.about {
+    padding: 65px 80px 85px;
+    background-color: var(--background-color);
+}
+
+.about-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.about-title h2 {
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 52px;
+    letter-spacing: 8px;
+    color: var(--dark-color);
+}
+
+.about-title h2 span {
+    display: inline-block;
+    margin-left: 8px;
+    font-family: "Aurellio", cursive;
+    font-weight: normal;
+    font-size: 66px;
+    letter-spacing: 0;
+}
+
+
+
+
+/* BILLEDE + TEKST */
+
+.about-content {
+    max-width: 1380px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 42% 58%;
+    gap: 65px;
+    align-items: center;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 80%;
+    display: block;
+    border-radius: 30px;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* TEKST */
+
+.about-text h3 {
+    margin: 0 0 28px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 1.1;
+
+    color: var(--dark-color);
+}
+
+.about-text p {
+    max-width: 660px;
+    margin: 0 0 24px;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+
+    color: var(--dark-color);
+}
+
+
+/* INFO FELTER */
+
+.about-details {
+    margin-top: 50px;
+     transform: translateX(-25px);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.about-detail {
+    min-height: 225px;
+    padding: 0 22px;
+    text-align: center;
+
+    border-left: 1px solid var(--dark-color);
+}
+
+.about-detail:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+.about-detail:last-child {
+    padding-right: 0;
+}
+
+.about-detail img {
+    width: 40px;
+    height: 40px;
+
+    object-fit: contain;
+
+    margin: 0 auto 17px;
+}
+
+.about-detail h4 {
+    margin: 0 0 14px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 18px;
+
+    color: var(--dark-color);
+}
+
+.about-detail p {
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.45;
+
+    color: var(--dark-color);
+}
+
+
+
+
+/* ========================================
+   PROJEKTER – FORSIDE
+======================================== */
+
+.projects {
+    padding: 70px 80px 90px;
+    background-color: var(--background-color);
+}
+
+
+/* OVERSKRIFT */
+
+.projects-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.projects-heading h2 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 52px;
+    letter-spacing: 8px;
+
+    color: var(--dark-color);
+}
+
+.projects-heading p {
+    margin: 12px 0 0;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: var(--dark-color);
+}
+
+
+/* DE 3 CARDS */
+
+.project-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+
+/* HVERT CARD */
+
+.project-card {
+    background-color: var(--secondary-color);
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 10px 24px rgba(41, 24, 17, 0.12);
+
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+
+/* BILLEDET */
+
+.project-image-wrapper {
+    position: relative;
+}
+
+.project-image-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(205, 186, 170, 0.37);
+
+    pointer-events: none;
+}
+
+.project-image {
+    width: 100%;
+    height: 245px;
+
+    display: block;
+    object-fit: cover;
+}
+
+
+/* INDHOLDET UNDER BILLEDET */
+
+.project-card-content {
+    padding: 26px 28px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* LILLE TEKST ØVERST */
+
+.project-type {
+    margin: 0 0 10px;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+
+    color: var(--dark-color);
+}
+
+
+/* PROJEKTNAVN */
+
+.project-card h3 {
+    margin: 0 0 14px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 34px;
+
+    color: var(--dark-color);
+}
+
+
+/* BESKRIVELSE */
+
+.project-description {
+    margin: 0 0 24px;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.55;
+
+    color: var(--dark-color);
+}
+
+
+/* SE CASE */
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+
+    color: var(--dark-color);
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.project-link span {
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover span {
+    transform: translateX(5px);
+}
+
+
+/* UDFORSK PROJEKTER KNAP */
+
+.projects-button {
+    width: fit-content;
+    margin: 42px auto 0;
+    padding: 14px 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+
+    text-decoration: none;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.projects-button:hover {
+    background-color: var(--hover-color);
+}
+
+
+
+
+
+
+
+
+/* ========================================
+   ARBEJDSMETODE
+======================================== */
+
+.arbejdsmetode {
+    padding: 101px 6% 170px;
+    text-align: center;
+    background-image: url("../img/maling.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 99% 101%;
+}
+
+.arbejdsmetode-title {
+    margin: 0 0 60px;
+    font-family: "Aurellio", serif;
+    font-size: 4.5rem;
+    font-weight: 400;
+    color: #2c1d14;
+}
+
+.arbejdsmetode-bobler {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 35px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.arbejdsmetode-bobler::before {
+    content: "";
+    position: absolute;
+    top: 72px;
+    left: 8%;
+    right: 8%;
+    height: 1px;
+    background-color: rgba(44, 29, 20, 0.35);
+    z-index: 0;
+}
+
+.arbejdsmetode-bobbel {
+    position: relative;
+    z-index: 1;
+}
+
+.arbejdsmetode-bobbel img {
+    display: block;
+    width: 145px;
+    height: auto;
+    margin: 0 auto 25px;
+}
+
+.arbejdsmetode-bobbel h3 {
+    margin: 0 0 12px;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    color: #2c1d14;
+}
+
+.arbejdsmetode-bobbel p {
+    max-width: 220px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #2c1d14;
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+    .arbejdsmetode-bobler {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 55px 35px;
+    }
+
+    .arbejdsmetode-bobler::before {
+        display: none;
+    }
+}
+
+/* MOBIL */
+@media (max-width: 600px) {
+    .arbejdsmetode {
+        padding: 80px 8% 90px;
+    }
+
+    .arbejdsmetode-title {
+        font-size: 3.3rem;
+        margin-bottom: 45px;
+    }
+
+    .arbejdsmetode-bobler {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .arbejdsmetode-bobbel img {
+        width: 125px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   MIT VÆRKTØJSSÆT
+======================================== */
+
+.toolbox-section {
+    padding: 70px 80px 90px;
+    background-color: var(--background-color);
+}
+
+
+/* OVERSKRIFT */
+
+.toolbox-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.toolbox-heading h2 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 52px;
+    letter-spacing: 8px;
+
+    color: var(--dark-color);
+}
+
+.toolbox-heading p {
+    margin: 28px 0 0;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    color: var(--dark-color);
+}
+
+
+/* VÆRKTØJSKASSE */
+
+.toolbox {
+    position: relative;
+
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    cursor: pointer;
+}
+
+
+/* BEGGE BILLEDER */
+
+.toolbox img {
+    width: 100%;
     height: auto;
     display: block;
-    margin-top: 5px;
+
+    transition: opacity 0.25s ease;
 }
+
+
+/* ÅBEN KASSE LIGGER OVENPÅ */
+
+.toolbox-open {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+}
+
+
+/* HOVER */
+
+.toolbox:hover .toolbox-closed {
+    opacity: 0;
+}
+
+.toolbox:hover .toolbox-open {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   PROJEKTSIDE
+======================================== */
+
+.projects-page {
+    padding: 100px 30px 90px;
+    background-color: var(--background-color);
+}
+
+
+/* OVERSKRIFT */
+
+.projects-page .projects-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.projects-page .projects-heading .projects-script {
+    margin: 0 0 -15px;
+
+    font-family: "Aurellio", cursive;
+    font-weight: normal;
+    font-size: 64px;
+
+    color: var(--dark-color);
+}
+
+.projects-page .projects-heading h1 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 52px;
+    letter-spacing: 8px;
+
+    color: var(--dark-color);
+}
+
+.projects-line {
+    width: 60px;
+    height: 1px;
+    margin: 18px auto 0;
+    background-color: var(--dark-color);
+}
+
+
+/* STORE PROJEKT CARDS */
+
+.project-case {
+    max-width: 1307px;
+    margin: 0 auto 45px;
+
+    background-color: var(--secondary-color);
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 12px 25px rgba(41, 24, 17, 0.18);
+}
+
+
+/* HERO-BILLEDET */
+
+.project-case-image {
+    width: 100%;
+    height: 290px;
+
+    overflow: hidden;
+}
+
+.project-case-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: cover;
+}
+
+
+/* INDHOLDET */
+
+.project-case-content {
+    padding: 18px 55px 65px;
+}
+
+
+/* LILLE TEKST OVER TITLEN */
+
+.project-case .project-type {
+    margin: 0 0 8px;
+
+    text-align: center;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+
+    letter-spacing: 0;
+
+    color: var(--dark-color);
+}
+
+
+/* TITEL */
+
+.project-case-content h2 {
+    margin: 0 0 28px;
+
+    text-align: center;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 38px;
+    font-weight: 600;
+
+    letter-spacing: 7px;
+
+    color: var(--dark-color);
+}
+
+
+/* BRØDTEKST */
+
+.project-case-content p {
+    margin: 0 0 28px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.45;
+
+    color: var(--dark-color);
+}
+
+
+/* PROCESSEN + LØSNINGEN */
+
+.project-case-content h3 {
+    margin: 28px 0 2px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 0;
+
+    color: var(--dark-color);
+}
+
+
+/* PROCESLINJEN */
+
+.project-process {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 18px;
+
+    margin: 28px 0 38px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+    color: var(--dark-color);
+}
+
+/* DE 3 BILLEDER NEDERST */
+
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    width: 100%;
+
+    margin-top: 115px;
+}
+
+/* HVER BILLEDBOKS */
+
+.project-gallery-image {
+    height: 265px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #EFE6CF;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+}
+
+
+/* SELVE SCREENSHOTTET */
+
+.project-gallery-image img {
+    height: 100%;
+    width: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+.back-home {
+    text-align: center;
+    margin: 70px 0 20px;
+}
+
+.back-home a {
+    display: inline-block;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    color: var(--dark-color);
+    text-decoration: none;
+
+    transition: transform 0.2s ease;
+}
+
+.back-home a:hover {
+    transform: translateX(-5px);
+}
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   KONTAKT SIDE
+======================================== */
+
+/* TEKSTEN I VENSTRE SIDE */
+
+.contact-hero-content {
+    position: absolute;
+
+    top: 150px;
+    left: 9%;
+
+    color: var(--dark-color);
+}
+
+
+/* KONTAKT */
+
+.contact-hero-content h1 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 58px;
+    font-weight: 600;
+
+    letter-spacing: 10px;
+
+    line-height: 1;
+
+    color: var(--dark-color);
+}
+
+
+/* MIG */
+
+.contact-script {
+    margin: -10px 0 0 0;
+
+    font-family: "Aurellio", cursive;
+    font-size: 72px;
+    font-weight: normal;
+
+    line-height: 1;
+
+    color: var(--dark-color);
+}
+
+
+/* LILLE LINJE */
+
+.contact-line {
+    width: 55px;
+    height: 1px;
+
+    margin: 22px 0 30px;
+
+    background-color: var(--dark-color);
+}
+
+
+/* INTROTEKST */
+
+.contact-intro {
+    margin: 0;
+
+    max-width: 430px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.55;
+
+    color: var(--dark-color);
+}
+
+
+
+
+
+
+.contact-section {
+    padding: 60px 80px 80px;
+    background-color: var(--secondary-color);
+}
+
+
+/* OVERSKRIFT */
+
+.contact-heading {
+    max-width: 1200px;
+    margin: 0 auto 35px;
+}
+
+.contact-heading h2 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+    color: var(--dark-color);
+}
+
+.contact-heading-line {
+    width: 45px;
+    height: 1px;
+
+    margin-top: 18px;
+
+    background-color: var(--dark-color);
+}
+
+
+/* TO KOLONNER */
+
+.contact-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+
+    align-items: start;
+}
+
+
+/* FORMULAR */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 0 0 7px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+
+    color: var(--dark-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-bottom: 20px;
+    padding: 12px 14px;
+
+    border: 1px solid rgba(41, 24, 17, 0.25);
+    background-color: transparent;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+
+    color: var(--dark-color);
+
+    outline: none;
+}
+
+.contact-form input {
+    height: 42px;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* FOCUS */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--dark-color);
+}
+
+
+/* PLACEHOLDER */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(41, 24, 17, 0.45);
+}
+
+
+/* SEND KNAP */
+
+.contact-submit {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    margin-top: 2px;
+    padding: 13px 22px;
+
+    border: none;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.contact-submit span {
+    transition: transform 0.25s ease;
+}
+
+.contact-submit:hover span {
+    transform: translateX(5px);
+}
+
+
+/* SVARTID */
+
+.contact-response-time {
+    margin: 14px 0 0;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+
+    color: var(--dark-color);
+}
+
+
+/* HØJRE SIDE */
+.contact-info {
+    padding-left: 70px;
+
+    border-left: 1px solid rgba(41, 24, 17, 0.35);
+}
+
+.contact-info > h3 {
+    margin: 0 0 35px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+
+    color: var(--dark-color);
+}
+
+
+/* HVERT KONTAKT-PUNKT */
+
+.contact-info-item {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 16px;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.contact-icon {
+    font-size: 27px;
+    color: var(--dark-color);
+}
+
+.contact-info-item h4 {
+    margin: 0 0 4px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+
+    color: var(--dark-color);
+}
+
+.contact-info-item p,
+.contact-info-item a {
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+.contact-info-item a:hover {
+    opacity: 0.6;
+}
+
+
+/* HÅNDSKRIFT NEDERST */
+
+.contact-signoff {
+    margin: 50px 0 0;
+
+    font-family: "Aurellio", cursive;
+    font-size: 36px;
+    line-height: 1.05;
+
+    color: var(--dark-color);
+
+    transform: rotate(-4deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+
+    padding: 55px 80px 25px;
+}
+
+
+/* DE 3 KOLONNER */
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: start;
+
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+/* LOGO */
+
+.footer-brand img {
+    width: 60px;
+    height: auto;
+
+    margin-bottom: 15px;
+}
+
+
+/* TEKST UNDER LOGO */
+
+.footer-brand p {
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* OVERSKRIFTER */
+
+.footer h3 {
+    margin: 0 0 18px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+}
+
+
+/* NAVIGATION */
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-navigation a {
+    margin-bottom: 8px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+
+    color: var(--secondary-color);
+    text-decoration: none;
+
+    transition: opacity 0.2s ease;
+}
+
+.footer-navigation a:hover {
+    opacity: 0.6;
+}
+
+
+/* SOCIALE MEDIER */
+
+.footer-social-icons {
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+}
+.footer-social {
+    justify-self: end;
+    text-align: right;
+}
+
+.footer-social-icons a {
+    display: block;
+}
+
+.footer-social-icons img {
+    width: 25px;
+    height: 25px;
+
+    object-fit: contain;
+
+    transition: transform 0.2s ease;
+}
+
+.footer-social-icons a:hover img {
+    transform: scale(1.12);
+}
+
+
+/* NEDERSTE TEKST */
+
+.footer-bottom {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 20px 0 0;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+
+    opacity: 0.75;
+}
+
+
+
+
+
+
+

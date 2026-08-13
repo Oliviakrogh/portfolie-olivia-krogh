@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,17 +16,11 @@
             <img class="hero-logo" src="img/logo.png" alt="OK logo">
 
             <nav class="hero-nav">
-                <a href="#om-mig">OM MIG</a>
-                <a href="#projekter">PROJEKTER</a>
-                <a href="#sociale-medier">SOCIALE MEDIER</a>
-                <a href="#kontakt">KONTAKT</a>
+                <a href="index.html#om-mig-info">OM MIG</a>
+                <a href="projekter.html">PROJEKTER</a>
+                <a href="kontakt.html">KONTAKT</a>
             </nav>
 
-            <button class="menu-button" aria-label="Åbn menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
 
         </header>
 
@@ -47,7 +41,9 @@
                 brugervenlighed, æstetik og funktion
             </p>
 
-            <button>UDFORSK PROJEKTER →</button>
+            <a href="projekter.html" class="hero-button">
+            UDFORSK PROJEKTER →
+            </a>
         </div>
 
     </section>
@@ -58,8 +54,19 @@
 
     <section class="desk" id="om-mig">
 
+
+    <!-- COMPUTER / PROJEKTER -->
+    <a class="desk-item computer-item" href="projekter.html">
+        <img src="img/computer.png" alt="Gå til projekter">
+
+        <div class="desk-label">
+            <span>Projekter</span>
+            <img class="desk-arrow" src="img/pil.png" alt="">
+        </div>
+    </a>
+
     <!-- AIRPODS / KONTAKT -->
-    <a class="desk-item airpods-item" href="#kontakt">
+    <a class="desk-item airpods-item" href="kontakt.html">
         <img src="img/airpods.png" alt="Gå til kontakt">
 
         <div class="desk-label">
@@ -69,31 +76,31 @@
     </a>
 
 
-    <!-- KAMERA / SOCIALE MEDIER -->
-    <a class="desk-item kamera-item" href="#sociale-medier">
-        <img src="img/kamera.png" alt="Gå til sociale medier">
+    <!-- NOTESBOG / ARBEJDSMETODE -->
+    <a class="desk-item notesbog-item" href="#arbejdsmetode">
+        <img src="img/notesbog.png" alt="Gå til arbejdsmetode">
 
         <div class="desk-label">
-            <span>Sociale medier</span>
+            <span>Arbejdsmetode</span>
             <img class="desk-arrow" src="img/pil.png" alt="">
         </div>
     </a>
 
 
-    <!-- NOTESBOG / PROJEKTER -->
-    <a class="desk-item notesbog-item" href="#projekter">
-        <img src="img/notesbog.png" alt="Gå til projekter">
+    <!-- BOG / VÆRKTØJSSÆT -->
+    <a class="desk-item bog-item" href="#vaerktoejssaet">
+        <img src="img/bog.png" alt="Gå til værktøjssæt">
 
         <div class="desk-label">
-            <span>Projekter</span>
+            <span>Værktøjssæt</span>
             <img class="desk-arrow" src="img/pil.png" alt="">
         </div>
     </a>
 
 
-    <!-- BOG / OM MIG -->
-    <a class="desk-item bog-item" href="#om-mig">
-        <img src="img/bog.png" alt="Læs mere om mig">
+    <!-- POLAROIDS / OM MIG -->
+    <a class="desk-item fritid-item" href="#om-mig-info">
+        <img src="img/fritid.png" alt="Se mine interesser">
 
         <div class="desk-label">
             <span>Om mig</span>
@@ -101,19 +108,358 @@
         </div>
     </a>
 
+</section>
 
-    <!-- POLAROIDS / FRITID -->
-    <a class="desk-item fritid-item" href="#fritid">
-        <img src="img/fritid.png" alt="Se mine interesser">
+<!-- OM MIG -->
+<section class="about" id="om-mig-info">
 
-        <div class="desk-label">
-            <span>Fritid</span>
-            <img class="desk-arrow" src="img/pil.png" alt="">
+    <div class="about-title">
+        <h2>HVEM ER <span>jeg?</span></h2>
+        <div class="section-line"></div>
+    </div>
+
+    <div class="about-content">
+
+       
+        <div class="about-image">
+            <img src="img/me-2.png" alt="Billede af Olivia">
         </div>
-    </a>
+
+   
+        <div class="about-info">
+
+            <div class="about-text">
+                <h3>Hej, jeg hedder Olivia.</h3>
+
+                <p>
+                    Jeg er kreativ, nysgerrig og detaljeorienteret, og jeg motiveres af at udvikle idéer og føre dem hele vejen fra de første tanker til en færdig løsning. Jeg har en stor interesse for det visuelle og lægger især vægt på, at design både skal være æstetisk og have et tydeligt formål.
+
+                </p>
+                    
+                <p>
+                    Det, jeg holder særligt af ved multimediedesign, er kombinationen af kreativitet, design og teknologi. Jeg nyder at arbejde med hele processen, fra research og idéudvikling, til design, udvikling og test. Jeg ser hvert projekt som en mulighed for at udfordre mig selv og udvikle mine kompetencer.
+                </p>
+            </div>
+
+
+            <!-- INFO BOKSE -->
+            <div class="about-details">
+
+                <div class="about-detail">
+                    <img src="img/uddannelse.png" alt="">
+                    <h4>UDDANNELSE</h4>
+                    <p>
+                        Multimediedesign<br>
+                        Erhvervsakademi<br>
+                        Aarhus
+                    </p>
+                </div>
+
+                <div class="about-detail">
+                    <img src="img/computer-1.png" alt="">
+                    <h4>KOMPETENCER</h4>
+                    <p>
+                        UX/UI Design<br>
+                        Frontend<br>
+                        Branding<br>
+                        Content Creation
+                    </p>
+                </div>
+
+                <div class="about-detail">
+                    <img src="img/pen.png" alt="">
+                    <h4>VÆRKTØJER</h4>
+                    <p>
+                        Figma<br>
+                        Adobe Creative Suite<br>
+                        HTML, CSS, JS<br>
+                        WordPress<br>
+                        Lightburn
+                    </p>
+                </div>
+
+                <div class="about-detail">
+                    <img src="img/pin.png" alt="">
+                    <h4>BASERET I</h4>
+                    <p>
+                        Åbyhøj<br>
+                        8230
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
+
+
+<!-- PROJEKTER -->
+<section class="projects" id="projekter">
+
+    <div class="projects-heading">
+        <h2>PROJEKTER</h2>
+        <div class="section-line"></div>
+
+        <p>Her er et udvalg af mine seneste projekter</p>
+    </div>
+
+    <div class="project-grid">
+
+        <!-- PROJEKT 1 -->
+        <article class="project-card">
+
+            <div class="project-image-wrapper">
+            <img class="project-image" src="img/ovartaci.png" alt="Ovartaci projekt">
+            </div>
+
+            <div class="project-card-content">
+                <p class="project-type">INTERAKTIV OPLEVELSE</p>
+
+                <h3>Ovartaci</h3>
+
+                <p class="project-description">
+                    En interaktiv installation, der matcher brugeren med en af
+                    Ovartacis dukker gennem en personlig quiz.
+                </p>
+
+                <a class="project-link" href="projekter.html#ovartaci">
+    SE CASE <span>→</span>
+</a>
+            </div>
+        </article>
+
+
+        <!-- PROJEKT 2 -->
+        <article class="project-card">
+            <div class="project-image-wrapper">
+            <img class="project-image" src="img/hundehimlen.png" alt="HundeHimlen projekt">
+            </div>
+
+            <div class="project-card-content">
+                <p class="project-type">HJEMMESIDE</p>
+
+                <h3>HundeHimlen</h3>
+
+                <p class="project-description">
+                    Et redesign af Hundehimlens hjemmeside med fokus på
+                    visuel identitet, brugervenlighed og sammenhængende branding.
+                </p>
+
+                <a class="project-link" href="projekter.html#hundehimlen">
+    SE CASE <span>→</span>
+</a>
+            </div>
+        </article>
+
+
+        <!-- PROJEKT 3 -->
+        <article class="project-card">
+            <div class="project-image-wrapper">
+            <img class="project-image" src="img/akvarie.png" alt="Projekt">
+            </div>
+
+            <div class="project-card-content">
+                <p class="project-type">INTERAKTIV TOUCHSKÆRM</p>
+
+                <h3>Akvarie Børnespil</h3>
+
+                <p class="project-description">
+                    Et interaktivt farvelægningsspil, hvor børn udfordres kreativt gennem forskellige levels.
+                </p>
+
+                <a class="project-link" href="projekter.html#akvarie">
+    SE CASE <span>→</span>
+</a>
+            </div>
+        </article>
+
+    </div>
+
+
+         <a class="projects-button" href="projekter.html">
+            UDFORSK PROJEKTER <span>→</span>
+        </a>
+
+</section>
+
+
+
+<!-- ARBEJDSMETODE -->
+<section class="arbejdsmetode" id="arbejdsmetode">
+
+    <h2 class="arbejdsmetode-title">Min proces</h2>
+
+    <div class="arbejdsmetode-bobler">
+
+        <!-- RESEARCH -->
+        <div class="arbejdsmetode-bobbel">
+            <img src="img/research-bobbel.png" alt="Research">
+
+            <h3>RESEARCH</h3>
+
+            <p>
+                Jeg undersøger målgruppen, markedet og eksisterende
+                løsninger for at forstå behov og kontekst.
+            </p>
+        </div>
+
+
+        <!-- IDÉ & KONCEPT -->
+        <div class="arbejdsmetode-bobbel">
+            <img src="img/ide-bobbel.png" alt="Idé og koncept">
+
+            <h3>IDÉ & KONCEPT</h3>
+
+            <p>
+                Jeg udvikler idéer og koncepter med fokus på
+                brugervenlighed, funktion og visuel identitet.
+            </p>
+        </div>
+
+
+        <!-- DESIGN -->
+        <div class="arbejdsmetode-bobbel">
+            <img src="img/design-bobbel.png" alt="Design">
+
+            <h3>DESIGN</h3>
+
+            <p>
+                Jeg skitserer, wireframer og designer løsninger,
+                der kombinerer æstetik og brugervenlighed.
+            </p>
+        </div>
+
+
+        <!-- UDVIKLING -->
+        <div class="arbejdsmetode-bobbel">
+            <img src="img/udvikling-bobbel.png" alt="Udvikling">
+
+            <h3>UDVIKLING</h3>
+
+            <p>
+                Jeg omsætter designet til et digitalt produkt med
+                fokus på kvalitet, responsivitet og tilgængelighed.
+            </p>
+        </div>
+
+
+        <!-- TEST -->
+        <div class="arbejdsmetode-bobbel">
+            <img src="img/test-bobbel.png" alt="Test og optimering">
+
+            <h3>TEST & OPTIMERING</h3>
+
+            <p>
+                Jeg tester, indsamler feedback og optimerer løsningen
+                løbende for at sikre den bedste brugeroplevelse.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- VÆRKTØJSKASSE -->
+<section class="toolbox-section" id="vaerktoejssaet">
+
+    <div class="toolbox-heading">
+        <h2>MIT VÆRKTØJSSÆT</h2>
+        <div class="section-line"></div>
+        <p>Programmer og værktøjer jeg bruger i mit kreative arbejde</p>
+    </div>
+
+    <div class="toolbox">
+
+        <img
+            class="toolbox-closed"
+            src="img/lukket-kasse.png"
+            alt="Lukket værktøjskasse"
+        >
+
+        <img
+            class="toolbox-open"
+            src="img/aaben-kasse.png"
+            alt="Åben værktøjskasse"
+        >
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <!-- VENSTRE -->
+        <div class="footer-brand">
+            <img src="img/logo-beige.png" alt="Olivia Krogh logo">
+
+            <p>
+                Olivia Krogh<br>
+                Multimediedesigner
+            </p>
+        </div>
+
+
+        <!-- MIDTEN -->
+        <div class="footer-navigation">
+            <h3>NAVIGATION</h3>
+
+            <a href="#om-mig-info">Om mig</a>
+            <a href="projekter.html">Projekter</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+
+
+        <!-- HØJRE -->
+        <div class="footer-social">
+            <h3>FØLG MED</h3>
+
+            <div class="footer-social-icons">
+
+                <a href="#" aria-label="LinkedIn">
+                    <img src="img/linkedin.png" alt="">
+                </a>
+
+                <a href="mailto:dinmail@eksempel.dk" aria-label="Send e-mail">
+                    <img src="img/mail.png" alt="">
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+        <p>© 2026 Olivia Krogh · Designet & udviklet</p>
+    </div>
+
+</footer>
     <script src="js/script.js"></script>
 
 </body>

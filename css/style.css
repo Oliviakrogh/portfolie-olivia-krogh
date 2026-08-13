@@ -93,12 +93,11 @@ button:hover {
 
 /* NAVN */
 
-.hero-content h1 {
-    font-family: "Aurellio", cursive;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: 1;
-    margin: 0 0 12px;
+.hero-name {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto 12px;
 }
 
 
@@ -215,7 +214,7 @@ button:hover {
     z-index: 2;
 }
 
-.desk-item img {
+.desk-item > img {
     width: 100%;
     display: block;
     transition: transform 0.3s ease;
@@ -260,17 +259,11 @@ button:hover {
 }
 
 
+
 /* TEKST VED HOVER */
 
 .desk-label {
     position: absolute;
-    top: -50px;
-    left: -55px;
-
-    font-family: "Aurellio", cursive;
-    font-size: 34px;
-    color: var(--secondary-color);
-    white-space: nowrap;
 
     opacity: 0;
     pointer-events: none;
@@ -282,60 +275,79 @@ button:hover {
 }
 
 .computer-item .desk-label {
-    top: 220px;
-    left: 510px;
+    top: 42%;
+    left: 102%;
 }
 
 .airpods-item .desk-label {
-    top: -45px;
-    left: 100px;
+    top: -30%;
+    left: 108%;
 }
 
 .notesbog-item .desk-label {
-    top: 240px;
-    left: -170px;
+    top: 90%;
+    left: -65%;
 }
 
 .bog-item .desk-label {
-    top: 220px;
-    left: 250px;
+    top: 82%;
+    left: 98%;
 }
 
 .fritid-item .desk-label {
-    top: -30px;
-    left: -35px;
+    top: -18%;
+    left: -20%;
 }
 
 
+.computer-item .desk-label-text {
+    width: clamp(80px,7vw, 120px);
+}
+
+.airpods-item .desk-label-text {
+    width: clamp(65px, 6.5vw, 100px);
+}
+
+.notesbog-item .desk-label-text {
+    width: clamp(95px, 9.5vw, 150px);
+}
+
+.bog-item .desk-label-text {
+    width: clamp(85px, 8.5vw, 130px);
+}
+
+.fritid-item .desk-label-text {
+    width: clamp(65px, 6.5vw, 100px);
+}
 
 /* PIL VED COMPUTER */
 .computer-item .desk-arrow {
-    width: 35px !important;
-    transform: translate(0px, 0px) scaleX(-1) !important;
+    width: 30%;
+    transform: translate(0%, 0%) scaleX(-1);
 }
 
 /* PIL VED AIRPODS */
 .airpods-item .desk-arrow {
-    width: 35px !important;
-    transform: translate(10px, 0px) scaleX(-1) !important;
+    width: 30%;
+    transform: translate(29%, 0%) scaleX(-1);
 }
 
 /* PIL VED NOTESBOG */
 .notesbog-item .desk-arrow {
-    width: 35px !important;
-    transform: translate(150px, -30px) rotate(-50deg) !important;
+    width: 15%;
+    transform: translate(-10%, 40%) rotate(-50deg);
 }
 
 /* PIL VED BOG */
 .bog-item .desk-arrow {
-    width: 35px !important;
-    transform: translate(10px, -100px) scaleX(-1) scaleY(-1) !important;
+    width: 30%;
+    transform: translate(29%, -286%) scaleX(-1) scaleY(-1);
 }
 
 /* PIL VED FRITID */
 .fritid-item .desk-arrow {
-    width: 35px !important;
-    transform: translate(-20px, 2px) rotate(25deg)  !important;
+    width: 15%;
+    transform: translate(-250%, 90%) rotate(25deg);
 }
 
 
@@ -362,6 +374,17 @@ button:hover {
     font-size: 52px;
     letter-spacing: 8px;
     color: var(--dark-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.about-jeg {
+    width: 10%;
+    height: auto;
+    display: block;
 }
 
 .about-title h2 span {
@@ -709,11 +732,10 @@ button:hover {
 }
 
 .arbejdsmetode-title {
-    margin: 0 0 60px;
-    font-family: "Aurellio", serif;
-    font-size: 4.5rem;
-    font-weight: 400;
-    color: #2c1d14;
+    display: block;
+    width: 20%;
+    height: auto;
+    margin: 0 auto 60px;
 }
 
 .arbejdsmetode-bobler {
@@ -927,13 +949,10 @@ button:hover {
 }
 
 .projects-page .projects-heading .projects-script {
-    margin: 0 0 -15px;
-
-    font-family: "Aurellio", cursive;
-    font-weight: normal;
-    font-size: 64px;
-
-    color: var(--dark-color);
+    display: block;
+    width: 10%;
+    height: auto;
+    margin: 0 auto -15px;
 }
 
 .projects-page .projects-heading h1 {
@@ -1188,15 +1207,10 @@ button:hover {
 /* MIG */
 
 .contact-script {
-    margin: -10px 0 0 0;
-
-    font-family: "Aurellio", cursive;
-    font-size: 72px;
-    font-weight: normal;
-
-    line-height: 1;
-
-    color: var(--dark-color);
+    display: block;
+    width: 100px;
+    height: auto;
+    margin: -1px 0 0;
 }
 
 
@@ -1450,15 +1464,11 @@ button:hover {
 /* HÅNDSKRIFT NEDERST */
 
 .contact-signoff {
+    display: block;
+    width: 40%;
+    height: auto;
     margin: 50px 0 0;
-
-    font-family: "Aurellio", cursive;
-    font-size: 36px;
-    line-height: 1.05;
-
-    color: var(--dark-color);
-
-    transform: rotate(-4deg);
+    rotate: -5deg;
 }
 
 
